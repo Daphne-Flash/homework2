@@ -151,16 +151,25 @@ map(commitCheck,~.[[3]][[2]][[3]][[1]]) -> allCommitDatesList
 
 allCommitDatesList是個list，請使用`unlist()`函數將它轉成一個atomic vector其class為character，並存在allCommitDates答案物件。（最後一行最忘了打答案物件）
 ```{r ans24}
+allCommitDates <- unlist(allCommitDatesList)
+class(allCommitDates)
+allCommitDates
 ```
 
 ### 2.5 
 allCommitDates是UTC時區的時間文字字串，請將它轉成date time格式，再改成台灣時區後，存在allCommitDatesTW答案物件。（最後一行最忘了打答案物件）
 ```{r ans25}
+allCommitDates <- ymd_hms(allCommitDates)
+allCommitDatesTW <- with_tz(allCommitDates,tz="Asia/Taipei")
+allCommitDatesTW
 ```
 
 ### 2.6
 使用`hour()`及`minute()`可分別將date time元素的「小時」及「分鐘」取出（其中小時是24小時制）。請創立一個logical vector答案物件logicWithinTimeFrame，各個元素值為TRUE時代表allCommitDatesTW的時間落在凌晨4點30到凌晨6點30之間（含起迄時點）。（最後一行最忘了打答案物件）
 ```{r ans26}
+hour1 <- hour(allCommitDatesTW)
+minute1 <- minute(allCommitDatesTW)
+logicWithinTimeFrame <- 
 ```
 
 ## 3
@@ -175,6 +184,9 @@ transcriptData的class是data frame（用`class(transcriptData)`可得知），�
 ### 3.1
 請查詢transcriptData元素名稱，並將它們存在名為variableNames的character vector答案物件裡。（最後一行最忘了打答案物件）
 ```{r ans31}
+transcriptData
+variableNames <- c("學號","學屆","學系","學年","學期","學期成績","學分數","必選修類別(必/選/通)")
+variableNames
 ```
 
 ### 3.2
