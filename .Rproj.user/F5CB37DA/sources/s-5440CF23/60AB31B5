@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2854900846",
+    "hash" : "3935058528",
     "id" : "60AB31B5",
-    "lastKnownWriteTime" : 1556090774,
-    "last_content_update" : 1556090774990,
+    "lastKnownWriteTime" : 1556096781,
+    "last_content_update" : 1556096781711,
     "path" : "~/GitHub/homework2/homework1-410773106.Rmd",
     "project_path" : "homework1-410773106.Rmd",
     "properties" : {
-        "cursorPosition" : "137,17",
-        "scrollLine" : "118"
+        "cursorPosition" : "137,19",
+        "scrollLine" : "133"
     },
     "relative_order" : 1,
     "source_on_save" : false,
