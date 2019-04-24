@@ -134,6 +134,8 @@ commit8TWDate
 ### 2.3
 原本commitCheck裡的元素沒有命名（`names(commitCheck)`會顯示NULL），請將這些元素依其位置順序命名為"commit1","commit2", "commit3"等等。此題最後一行請輸入commitCheck，老師改題時會看commitCheck的names有沒有正確更改。）(hint: `c(1:5)`可創出c(1,2,3,4,5); `length(commitCheck)`會給你commitCheck元素個數)
 ```{r ans23}
+length(commitCheck)
+names(commitCheck)
 ```
 
 ### 2.4
