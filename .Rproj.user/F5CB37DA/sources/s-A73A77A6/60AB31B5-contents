@@ -169,7 +169,8 @@ allCommitDatesTW
 ```{r ans26}
 hour1 <- hour(allCommitDatesTW)
 minute1 <- minute(allCommitDatesTW)
-
+logicWithinTimeFrame <- hour1>=4 & hour1<=6 & minute1=30
+logicWithinTimeFrame
 ```
 
 ## 3
