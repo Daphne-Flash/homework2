@@ -1,6 +1,0 @@
-"0","hour1 <- hour(allCommitDatesTW)"
-"0","minute1 <- minute(allCommitDatesTW)"
-"0","logicWithinTimeFrame <- hour1>=4 & hour1<=6 & minute1=30"
-"2","Error in logicWithinTimeFrame <- hour1 >= 4 & hour1 <= 6 & minute1 = 30 : 
-  could not find function ""<-<-""
-"
