@@ -187,7 +187,7 @@ transcriptData的class是data frame（用`class(transcriptData)`可得知），�
 請查詢transcriptData元素名稱，並將它們存在名為variableNames的character vector答案物件裡。（最後一行最忘了打答案物件）
 ```{r ans31}
 transcriptData
-variableNames <- c("學號","學屆","學系","學年","學期","學期成績","學分數","必選修類別(必/選/通)")
+variableNames <- names(transcriptData)
 variableNames
 ```
 
